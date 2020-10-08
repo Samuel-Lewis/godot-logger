@@ -23,24 +23,24 @@ const error_messages = {
 	ERR_FILE_BAD_PATH: "File: Bad path error.",
 	ERR_FILE_NO_PERMISSION: "File: No permission error.",
 	ERR_FILE_ALREADY_IN_USE: "File: Already in use error.",
-	ERR_FILE_CANT_OPEN: "File: Can’t open error.",
-	ERR_FILE_CANT_WRITE: "File: Can’t write error.",
-	ERR_FILE_CANT_READ: "File: Can’t read error.",
+	ERR_FILE_CANT_OPEN: "File: Can't open error.",
+	ERR_FILE_CANT_WRITE: "File: Can't write error.",
+	ERR_FILE_CANT_READ: "File: Can't read error.",
 	ERR_FILE_UNRECOGNIZED: "File: Unrecognized error.",
 	ERR_FILE_CORRUPT: "File: Corrupt error.",
 	ERR_FILE_MISSING_DEPENDENCIES: "File: Missing dependencies error.",
 	ERR_FILE_EOF: "File: End of file (EOF) error.",
-	ERR_CANT_OPEN: "Can’t open error.",
-	ERR_CANT_CREATE: "Can’t create error.",
+	ERR_CANT_OPEN: "Can't open error.",
+	ERR_CANT_CREATE: "Can't create error.",
 	ERR_QUERY_FAILED: "Query failed error.",
 	ERR_ALREADY_IN_USE: "Already in use error.",
 	ERR_LOCKED: "Locked error.",
 	ERR_TIMEOUT: "Timeout error.",
-	ERR_CANT_CONNECT: "Can’t connect error.",
-	ERR_CANT_RESOLVE: "Can’t resolve error.",
+	ERR_CANT_CONNECT: "Can't connect error.",
+	ERR_CANT_RESOLVE: "Can't resolve error.",
 	ERR_CONNECTION_ERROR: "Connection error.",
-	ERR_CANT_ACQUIRE_RESOURCE: "Can’t acquire resource error.",
-	ERR_CANT_FORK: "Can’t fork process error.",
+	ERR_CANT_ACQUIRE_RESOURCE: "Can't acquire resource error.",
+	ERR_CANT_FORK: "Can't fork process error.",
 	ERR_INVALID_DATA: "Invalid data error.",
 	ERR_INVALID_PARAMETER: "Invalid parameter error.",
 	ERR_ALREADY_EXISTS: "Already exists error.",
@@ -306,7 +306,10 @@ const MAX_STRATEGY = STRATEGY_MEMORY * 2 - 1
 
 # Output format identifiers
 const FORMAT_IDS = {
-	"level": "{LVL}", "module": "{MOD}", "message": "{MSG}", "error_message": "{ERR}"
+	"level": "{LVL}",
+	"module": "{MOD}",
+	"message": "{MSG}",
+	"error_message": "{ERR}"
 }
 
 # Queue modes
@@ -324,7 +327,12 @@ const FILE_BUFFER_SIZE = 30
 var default_output_level = INFO
 # TODO: Find (or implement in Godot) a more clever way to achieve that
 var default_output_strategies = [
-	STRATEGY_PRINT, STRATEGY_PRINT, STRATEGY_PRINT, STRATEGY_PRINT, STRATEGY_PRINT, STRATEGY_PRINT
+	STRATEGY_PRINT,
+	STRATEGY_PRINT,
+	STRATEGY_PRINT,
+	STRATEGY_PRINT,
+	STRATEGY_PRINT,
+	STRATEGY_PRINT
 ]
 var default_logfile_path = (
 	"user://%s.log"
